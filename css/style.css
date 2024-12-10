@@ -9860,6 +9860,14 @@ a {
      
   }
 
+  .section-title-nocaps {
+    font-size: 80px;
+    font-weight: 900;
+    color: #3E98AD; /* Custom color */
+     
+  }
+
+
   .section-title-min {
     font-weight:400;
     text-transform: uppercase;
