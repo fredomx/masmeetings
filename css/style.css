@@ -9975,38 +9975,39 @@ a {
 
 /* Position title at the bottom initially */
 .title-position {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
+  position: relative;
+  bottom: 20%;
   font-size: 2rem;
   font-weight: bold;
   color: white;
 
 }
 
-/* When hovering, move the title to the center of the image */
-.carousel-item.expand-on-hover:hover .title-position {
-  top: 50%;
-  bottom: auto;
-  transform: translate(-50%, -50%);
-}
 
 /* Add expansion effect for the hovered item */
 .carousel-item.expand-on-hover-active {
   flex: 2;
-  transform: scale(1.05);
+ 
 }
 
 
 .carousel-item img {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 5px;
+
 }
 
+/* .carousel-item img:hover {
+  width: 100%;
+  border-radius: 5px;
+} */
+
 .carousel-item:hover {
-  flex: 5; /* Expands on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  flex: 5; 
+ 
 }
 
 /* Selector item hover effect */
