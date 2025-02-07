@@ -9963,26 +9963,42 @@ a {
   }
 
 
+/* Estilos base para los elementos del carrusel */
+
+.carousel-container {
+  display: flex;
+  gap: 10px;
+}
 
 
-  /* Carousel item hover effect to expand */
 .carousel-item {
   flex: 1;
   transition: all 0.3s ease-in-out;
-  position: raelative; /* To position the title absolutely within the item */
-  overflow: hidden;
+  position: relative; /* Corregido el error "raelative" */
+
 }
 
-/* Position title at the bottom initially */
+/* Oculta el título por defecto */
 .title-position {
   position: relative;
   bottom: 20%;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: white;
-
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1; 
 }
 
+/* Cuando un .carousel-item está en hover, oculta los títulos de los demás */
+.carousel-container:hover .carousel-item:not(:hover) .title-position {
+  opacity: 0;
+
+}
+/* Mantiene visible solo el título del elemento activo */
+.carousel-item.active .title-position {
+  opacity: 1;
+  
+}
 
 /* Add expansion effect for the hovered item */
 .carousel-item.expand-on-hover-active {
@@ -10000,17 +10016,19 @@ a {
 
 }
 
-/* .carousel-item img:hover {
+.carousel-item img:hover {
   width: 100%;
   border-radius: 5px;
-} */
+  
+}
 
 .carousel-item:hover {
   flex: 5; 
  
 }
 
-/* Selector item hover effect */
+/* Selector item hover effect 3FS */
+
 .selector-item {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -10021,11 +10039,13 @@ a {
   transform: scale(1.1); /* Zoom effect on hover */
 }
 
+
 .selector-item h5 {
   margin-top: 15px;
   margin-bottom: 0; /* Remove bottom margin */
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 800;
+  
 }
 
 /* Styling for the entire container */
@@ -10036,6 +10056,7 @@ a {
 .carousel-item.expand-on-hover-active {
   flex: 2;
   transform: scale(1.05);
+  
 }
 
 
@@ -10059,7 +10080,6 @@ a {
 
 
 
-
 /* Adjust carousel image for a clean fit */
 .carousel-image {
   width: 100%;
@@ -10072,16 +10092,16 @@ a {
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
-  padding: 10px;
+  padding: 25px;
   margin: 0;
   gap: 1rem;
 }
 
 .carousel-nav-item {
   font-size: 2rem;
-  font-weight: bold;
   color: gray;
   cursor: pointer;
+  line-height: 4rem;
   position: relative; /* Needed for the pseudo-element */
   transition: color 0.3s, transform 0.2s, -webkit-text-stroke 0.3s;
 
@@ -10091,11 +10111,11 @@ a {
 .carousel-nav-item::before {
   content: "";
   position: absolute;
-  right: -30px; /* Adjust the position of the line */
+  left: -30px; /* Adjust the position of the line */
   top: 50%; /* Center vertically */
   transform: translateY(-50%);
   width: 0; /* Start with no width */
-  height: 2px;
+  height: 1px;
   background-color: #3E98AD; /* Blue line color */
   transition: width 0.3s ease-in-out; /* Smooth animation */
 }
@@ -10111,19 +10131,26 @@ a {
 
 .carousel-nav-item.outline {
   color: transparent; /* Remove fill color */
-  -webkit-text-stroke: 2px #3E98AD; /* 2px outline with blue color */
+  -webkit-text-stroke: .5px #3E98AD; /* 2px outline with blue color */
 }
 
 
 /* When active, persist the blue line and larger font */
 .carousel-nav-item.active {
-  transform: scale(1.8);
+  transform: scale(2.5);
   color: transparent;
-  -webkit-text-stroke: 2px #3E98AD; 
+  margin-left: 5rem;
+  -webkit-text-stroke: .5px #3E98AD; 
 
  
 }
 
 .carousel-nav-item.active::before {
   width: 20px; /* Persist the blue line for the active item */
+  
+}
+
+.mini-description {
+  font-size: .9rem;
+  font-weight: 600;
 }
