@@ -171,8 +171,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const targetId = selector.getAttribute('data-target');
       
       // Update text color to indicate the active selection
-      selectorItems.forEach(item => item.querySelector('h5').classList.remove('text-primary'));
-      selector.querySelector('h5').classList.add('text-primary');
+      selectorItems.forEach(item => item.querySelector('h5').classList.remove('text-outlined'));
+      selector.querySelector('h5').classList.add('text-outlined');
       
       // Trigger hover effect for the corresponding carousel item
       triggerHover(targetId);
