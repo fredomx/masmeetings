@@ -9865,13 +9865,25 @@ a {
     }
 
 
-  .section-title {
-    font-size: 80px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #3E98AD; /* Custom color */
-     
-  }
+    .section-title {
+      font-size: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #3E98AD; /* Custom color */
+    }
+    
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 60px; /* Tamaño más pequeño en pantallas pequeñas */
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .section-title {
+        font-size: 50px; /* Aún más pequeño en pantallas extra pequeñas */
+      }
+    }
+    
 
   .section-title-light {
     font-size: 50px;
@@ -10089,6 +10101,7 @@ a {
 
 .services-list {
   text-transform: uppercase;
+  text-align: start;
 
 }
 

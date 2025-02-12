@@ -106,14 +106,14 @@
 	  <div class="section">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-4 text-center">
+				<div class="col-8 col-lg-4 pt-5 text-center">
 					<img src="images/section-1.png" class="img-fluid img-r">
 				</div>
 				  
 				<!-- Empty Column -->
 				<div class="col-1"></div>
 			
-				<div class="col-lg-4 pt-5">
+				<div class="col-8 col-lg-4 pt-5">
 					<p>Somos un integrador de servicios para turismo de reuniones con el toque especial para hacer de cada uno de tus viajes de congreso, convención y/o incentivo 
 						<strong>una experiencia Máxima de calidad con nuestro ya clásico servicio 3F s:</strong></p>
 
@@ -129,45 +129,47 @@
 
 
 	<div class="container my-5">
-		<div class="row">
-		  <!-- Carousel (3 Grid) -->
-		  <div class="col-lg-11">
-			<div class="d-flex">
-			  <!-- Carousel Item 1 -->
-			  <div class="carousel-item d-flex flex-column align-items-center mx-1 p-3 position-relative expand-on-hover" data-id="1">
-				<img src="images/f1.png" alt="Image 1" class="img-fluid">
-				<h5 class="title-position mx-3">FACILIDAD</h5>
-				<p>Nos gusta hacerte la vida más sencilla, que sea muy fácil para ti y tu grupo cada paso...</p>
-			  </div>
-			  <!-- Carousel Item 2 -->
-			  <div class="carousel-item d-flex flex-column align-items-center mx-1 p-3 position-relative expand-on-hover" data-id="2">
-				<img src="images/f2.png" alt="Image 2" class="img-fluid">
-				<h5 class=" title-position mx-3">FAMILIARIDAD</h5>
-				<p>Con el tiempo hemos alcanzado un nivel de especialización...</p>
-			  </div>
-			  <!-- Carousel Item 3 -->
-			  <div class="carousel-item d-flex flex-column align-items-center mx-1 p-3 position-relative expand-on-hover" data-id="3">
-				<img src="images/f3.png" alt="Image 3" class="img-fluid">
-				<h5 class="title-position mx-3">FLEXIBILIDAD</h5>
-				<p>Nuestra trayectoria nos ha enseñado a estar listos para lo inesperado...</p>
-			  </div>
-			</div>
-		  </div>
-	  
-		  <!-- Selector on the Right Side -->
-		  <div class="col-lg-1 d-flex flex-column align-items-start">
-			<div class="selector-item mb-3" data-target="1">
-			  <h5 class="text-outlined">F1</h5>
-			</div>
-			<div class="selector-item mb-3" data-target="2">
-			  <h5>F2</h5>
-			</div>
-			<div class="selector-item mb-3" data-target="3">
-			  <h5>F3</h5> <!-- Active state for F3 -->
-			</div>
-		  </div>
-		</div>
-	  </div>
+  <div class="row">
+    <!-- Carousel (Full width in mobile, 11 columns in large screens) -->
+    <div class="col-12 col-lg-11">
+      <div class="d-flex flex-column flex-lg-row align-items-stretch">
+        <!-- Carousel Items -->
+        <div class="carousel-item d-flex flex-column align-items-center mx-1 p-3 position-relative expand-on-hover" data-id="1">
+          <img src="images/f1.png" alt="Image 1" class="img-fluid">
+          <h5 class="title-position mx-3">FACILIDAD</h5>
+		  <h5 class="d-block d-lg-none title">FACILIDAD</h5>
+          <p>Nos gusta hacerte la vida más sencilla, que sea muy fácil para ti y tu grupo cada paso...</p>
+        </div>
+        <div class="carousel-item d-flex flex-column align-items-center mx-1 p-3 position-relative expand-on-hover" data-id="2">
+          <img src="images/f2.png" alt="Image 2" class="img-fluid">
+          <h5 class="title-position mx-3">FAMILIARIDAD</h5>
+		  <h5 class="d-block d-lg-none title">FAMILIARIDAD</h5>
+          <p>Con el tiempo hemos alcanzado un nivel de especialización...</p>
+        </div>
+        <div class="carousel-item d-flex flex-column align-items-center mx-1 p-3 position-relative expand-on-hover" data-id="3">
+          <img src="images/f3.png" alt="Image 3" class="img-fluid">
+          <h5 class="title-position mx-3">FLEXIBILIDAD</h5>
+		  <h5 class="d-block d-lg-none title">FLEXIBILIDAD</h5>
+          <p>Nuestra trayectoria nos ha enseñado a estar listos para lo inesperado...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Selectors (Below in mobile, right side in large screens) -->
+    <div class="col-12 col-lg-1 d-flex flex-row flex-lg-column justify-content-center align-items-start mt-3 mt-lg-0 d-none d-lg-block">
+      <div class="selector-item mx-2 mx-lg-0 mb-lg-3" data-target="1">
+        <h5 class="text-outlined">F1</h5>
+      </div>
+      <div class="selector-item mx-2 mx-lg-0 mb-lg-3" data-target="2">
+        <h5>F2</h5>
+      </div>
+      <div class="selector-item mx-2 mx-lg-0" data-target="3">
+        <h5>F3</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 	  
 
@@ -177,9 +179,9 @@
 
  	<!-- Filosofia section starts-->
 	  <div class="section">
-		<div class="">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-3 mt-5 pt-5">
+				<div class="col-lg-3 d-none d-lg-block mt-5 pt-5">
 					<img src="images/section-2.png" class="img-fluid img-r">
 				</div>
 				  
@@ -189,11 +191,11 @@
 					
 				</div>
 				
-				<div class="col-lg-3 justify-content-center mt-5">
+				<div class=" col-lg-3 justify-content-center mt-lg-5 p-3">
 
 					<h2 class="section-title">Filo-</h2>
 					<h2 class="section-title">sofía</h2>
-					<p>Lograr que nuestros clientes cumplan sus objetivos en los eventos que organizamos para ellos, en conjunto, a través de experiencias genuinas donde maximizamos el presupuesto asignado y haya una verdadera relación de valor por la calidad.</p>
+					<p class="my-5">Lograr que nuestros clientes cumplan sus objetivos en los eventos que organizamos para ellos, en conjunto, a través de experiencias genuinas donde maximizamos el presupuesto asignado y haya una verdadera relación de valor por la calidad.</p>
 
 				</div>
 
@@ -211,19 +213,18 @@
 	<!-- Filosofia section ends-->
 
 	<!-- Servicios section starts-->
-	<div class="section">
+	<div class="section p-3">
 		<div class="container justify-content-center text-center">
 			<div class="row">
 
-				<div class="col-lg-6 justify-content-center">
-
+				<div class="col-lg-6 mb-5">
 					<h2 class="section-title">Servi-</h2>
 					<h2 class="section-title">cios</h2>
 				</div>
 
 
 				<div class="container col-lg-6 services-list">
-					<ul class="services-list">
+					<ul class="">
 						<li class="d-flex align-items-center justify-content-between py-2 border-bottom service-hover-item">
 						<div class="d-flex align-items-center">
 							<img src="fonts/custom-icon/servicios-1.svg" alt="Icon 1" class="me-3" style="width: 24px; height: 24px;">
@@ -306,14 +307,32 @@
 
 
 	<div class="section justify-content-center">
-		<div class="">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-8 justify-content-center">
 
 					<div class="">
+
+
+					
+						<div class="col-10 mx-1">
+							<div class="mb-5 d-block d-lg-none">
+								<h2 class="section-title ">Gale-</h2>
+								<h2 class="section-title">ria</h2>
+							</div>
+
+							<div class="mb-5 d-block d-lg-none">
+								<p class="">Más que una propuesta...
+									<strong>Más Meetings</strong>, porque tu
+									desuno es un evento
+									ex loso.</p>
+			
+							</div>
+						</div>
+
 						<div class="row align-items-center">
 						  <!-- Carousel Column -->
-						  <div class="col-md-8">
+						  <div class="col-lg-8">
 							<div class="carousel-wrapper">
 							  <!-- Carousel Images -->
 							  <div class="my-slider">
@@ -339,7 +358,7 @@
 						  </div>
 					  
 						  <!-- Navigation Column -->
-						  <div class="col-md-4">
+						  <div class="col-lg-4">
 							<ul class="carousel-navigation">
 							  <li class="carousel-nav-item active" data-index="0">01</li>
 							  <li class="carousel-nav-item" data-index="1">02</li>
@@ -352,7 +371,7 @@
 					  </div>
 
 				</div>
-				<div class="col-lg-2 justify-content-center d-flex align-items-center">
+				<div class="col-lg-2 justify-content-center d-flex align-items-center d-none d-lg-block">
 					<p class="text-decoration-underline">Más que una propuesta...
 						<strong>Más Meetings</strong>, porque tu
 						desuno es un evento
@@ -404,7 +423,7 @@
 <div class="sec-4 section bg-light">
 
 		<div class="text-center mb-5">
-			<h2 class="heading title mb-5 text-center">Testimonios</h2>
+			<h2 class="heading section-title mb-5 text-center">Testimonios</h2>
 		</div>
 		<div class="testimonial-slide-center-wrap" data-aos="fade-up" data-aos-delay="100">
 
@@ -481,89 +500,75 @@ Mas Mas Meetinas"
 
 	<div class="site-footer bg-light">
 		<div class="container">
-
-			<div class="row justify-content-between">
-				<div class="col-lg-3">
-					<div class="widget mx-1 p-3">
-						
+		  
+		  <div class="row justify-content-between text-center text-lg-start">
 			
-						<a href="index.html" class="logo mb-5">
-							<img src="images/logo-grey.svg" alt="Archiark Logo" class="logo-svg">
-						</a>
-
-					</div>
-					
-					<div class="widget">
-			
-						<ul class="social list-unstyled mb-5">
-							<li><a href="#"><span class="icon-facebook"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>
-							<li><a href="#"><span class="icon-instagram"></span></a></li>
-							<li><a href="#"><span class="icon-dribbble"></span></a></li>
-							<li><a href="#"><span class="icon-linkedin"></span></a></li>
-						</ul>
-					</div>
-				</div>
-
-
-				<div class="col-lg-3">
-					<div class="widget mx-1 p-3">
-						
-			
-						<p>Contáctanos / contact us</p>
-						<p>servicemasmertings.com</p>
-						<p>(333) 333 33 33</p>	
-
-					</div>
-				
-				</div>
-
-				<div class="col-lg-3">
-					<div class="row">
-						<div class="col-12">
-							<div class="widget">
-								<h3 class="line-top">Index</h3>
-							</div>
-						</div>
-						<div class="col-12 ">
-							<div class="widget">
-								<ul class="links list-unstyled">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Filosofia</a></li>
-									<li><a href="#">MM el sueño</a></li>
-									<li><a href="#">Conciencia ambiental</a></li>
-									<li><a href="#">Cultura </a></li>
-									<li><a href="#">Servicios </a></li>
-								</ul>
-							</div>
-						</div>
-					
-	
-					</div>
-				</div>
-
-				<div class="col-lg-3">
-					<div class="widget mx-1 p-3">
-						
-						<a href="index.html" class="logo mb-5">
-							<img src="images/mapa.png" alt="Archiark Logo" class="logo-svg">
-						</a>
-
-					</div>
-				
-				</div>
-
-
+			<!-- Logo y redes sociales -->
+			<div class="col-md-6 col-lg-3 mb-4 ">
+			  <div class="widget ">
+				<a href="index.html" class="logo mb-3 d-block ">
+				  <img src="images/logo-grey.svg" alt="Archiark Logo" class="logo-svg">
+				</a>
+			  </div>
+			  <div class="widget">
+				<ul class="social list-unstyled d-flex justify-content-center justify-content-lg-start gap-3">
+				  <li><a href="#"><span class="icon-facebook"></span></a></li>
+				  <li><a href="#"><span class="icon-twitter"></span></a></li>
+				  <li><a href="#"><span class="icon-instagram"></span></a></li>
+				  <li><a href="#"><span class="icon-dribbble"></span></a></li>
+				  <li><a href="#"><span class="icon-linkedin"></span></a></li>
+				</ul>
+			  </div>
 			</div>
-
-			<div class="row justify-content-center text-center copyright">
-				<div class="col-md-8">
-					<p class="small text-black-50">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Dev with love by <a href="https://futunub.com">Futunub.com</a>
-					</p>
-				</div>
+	  
+			<!-- Contacto -->
+			<div class="col-md-6 col-lg-3 mb-4">
+			  <div class="widget">
+				<h3 class="line-top">Contáctanos</h3>
+				<p>servicemasmertings.com</p>
+				<p>(333) 333 33 33</p>
+			  </div>
 			</div>
+	  
+			<!-- Enlaces -->
+			<div class="col-md-6 col-lg-3 mb- d-lg-block d-none">
+			  <div class="widget">
+				<h3 class="line-top">Index</h3>
+				<ul class="links list-unstyled">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Filosofía</a></li>
+				  <li><a href="#">MM el sueño</a></li>
+				  <li><a href="#">Conciencia ambiental</a></li>
+				  <li><a href="#">Cultura</a></li>
+				  <li><a href="#">Servicios</a></li>
+				</ul>
+			  </div>
+			</div>
+	  
+			<!-- Mapa -->
+			<div class="col-md-6 col-lg-3 mb-4 d-lg-block d-none">
+			  <div class="widget">
+				<a href="index.html" class="d-block">
+				  <img src="images/mapa.png" alt="Mapa ubicación" class="img-fluid">
+				</a>
+			  </div>
+			</div>
+	  
+		  </div>
+	  
+		  <!-- Copyright -->
+		  <div class="row justify-content-center text-center copyright mt-4">
+			<div class="col-md-8">
+			  <p class="small text-black-50">
+				Copyright &copy; <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. —
+				Dev with love by <a href="https://futunub.com">Futunub.com</a>
+			  </p>
+			</div>
+		  </div>
+	  
 		</div>
-	</div>
+	  </div>
+	  
 
 
 	
