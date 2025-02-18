@@ -8966,6 +8966,7 @@ textarea.form-control-lg {
 
 /* Burger */
 .burger {
+  margin: 1rem;
   width: 28px;
   height: 32px;
   cursor: pointer;
@@ -10197,9 +10198,16 @@ a {
 .text-outlined {
   color: #3E98AD !important; /* Hace que el texto sea transparente */
   -webkit-text-stroke: 2px #3E98AD !important; /* Ajusta el grosor del contorno */
-  font-size: 5rem !important; /* Tamaño del texto */
+  font-size: 3rem !important; /* Tamaño del texto */
+  margin-right: 1rem!important; /* Ajusta el margen derecho */
   font-family: "Montserrat", sans-serif !important; /* Asegurar que sea sans-serif */
   font-weight: 800 !important; /* Hacer el texto más grueso si es necesario */
 }
 
  /* Text Outlined for Fs ends */
+
+
+ .site-menu-toggle {
+  position: relative;
+  z-index: 9999; /* Ensure it appears above other elements */
+}

@@ -31,76 +31,101 @@
 </head>
 <body>
 
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
+	<!-- Mobile Navbar (only visible on mobile) -->
+<div class="site-mobile-menu site-navbar-target d-lg-none">
+    <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+            <span class="icofont-close js-menu-toggle"></span>
+        </div>
+    </div>
+    <div class="site-mobile-menu-body">
+        <ul class="site-menu list-unstyled">
+            <li><a href="index.html">XQ MM</a></li>
+            <li><a href="filosofia.html">Filosofía</a></li>
+            <li><a href="sueño.html">MM el Sueño</a></li>
+            <li><a href="conciencia-ambiental.html">Conciencia ambiental</a></li>
+            <li><a href="cultura.html">Cultura</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+    </div>
+</div>
 
-	<div class="container-fluid">
-		<div class="row">
-		  <!-- Navbar Section -->
-		  <nav class="site-navi col-3 bg-white d-flex flex-column align-items-center">
-			<!-- Logo at the top -->
-			<a href="index.html" class="logo mb-4 mt-3 pt-5">
-				<img src="images/logo.svg" alt="Archiark Logo" class="logo-svg">
-			  </a>
-			<!-- Navigation Menu -->
-			<ul class="site-menu list-unstyled flex-grow-1 d-flex flex-column justify-content-center">
-			  <li class="active mb-3"><a href="index.html" class="text-dark">XQ MM</a></li>
-			  <li class="mb-3"><a href="filosofia.html" class="text-dark">Filosofía</a></li>
-			  <li class="mb-3"><a href="sueño.html" class="text-dark">MM el Sueño</a></li>
-			  <li class="mb-3"><a href="conciencia-ambiental.html" class="text-dark">Conciencia ambiental</a></li>
-			  <li class="mb-3"><a href="cultura.html" class="text-dark">Cultura</a></li>
-			  <li class="mb-3"><a href="servicios.html" class="text-dark">Servicios</a></li>
-			</ul>
-			<!-- Contact Information -->
-			<div class="mb-3">
-				<h6 class="text-dark">Contáctanos / Contact us</h3>
-				<h6 class="">+2 292 4392 327</h3>
-			</div>
+<!-- Mobile Navbar Toggle (Hamburger Icon) -->
+<a href="#" class=" burger ml-auto float-end site-menu-toggle light js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target=".site-mobile-menu-body">
+    <span></span>
+</a>
 
-			<!-- Social media -->
-			<div class="mb-3">
-				<div class="row justify-content-center align-items-center">
-				  <div class="col-auto">
-					<a href="https://facebook.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Facebook">
-					  FB
-					</a>
-				  </div>
-				  <div class="col-auto">
-					<a href="https://twitter.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Twitter">
-					  X
-					</a>
-				  </div>
-				  <div class="col-auto">
-					<a href="https://instagram.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Instagram">
-					  IG
-					</a>
-				  </div>
-				</div>
-			  </div>
-		  </nav>
-	  
-		  <!-- Hero Section -->
-		  <div class="hero-2 col-9 overlay" style="background-image: url('images/home.png');">
-			<div class="container h-100">
-			  <div class="row h-100 align-items-center">
-				<div class="col-12 text-center">
-				  <div class="play-vid">
-					<a href="https://www.youtube.com/watch?v=Ipk1Hpt7gUw" class="play glightbox">
-					  <span class="icon-play"></span>
-					</a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
+<!-- Desktop Navbar (on the left) -->
+<div class="container-fluid d-none d-lg-block">
+    <div class="row">
+        <nav class="site-navi col-3 bg-white d-flex flex-column align-items-center">
+            <!-- Logo at the top -->
+            <a href="index.html" class="logo mb-4 mt-3 pt-5">
+                <img src="images/logo.svg" alt="Archiark Logo" class="logo-svg" style="max-width: 100%; height: auto;">
+            </a>
+            <!-- Navigation Menu -->
+            <ul class="site-menu list-unstyled flex-grow-1 d-flex flex-column justify-content-center">
+                <li class="active mb-3"><a href="index.html" class="text-dark">XQ MM</a></li>
+                <li class="mb-3"><a href="filosofia.html" class="text-dark">Filosofía</a></li>
+                <li class="mb-3"><a href="sueño.html" class="text-dark">MM el Sueño</a></li>
+                <li class="mb-3"><a href="conciencia-ambiental.html" class="text-dark">Conciencia ambiental</a></li>
+                <li class="mb-3"><a href="cultura.html" class="text-dark">Cultura</a></li>
+                <li class="mb-3"><a href="servicios.html" class="text-dark">Servicios</a></li>
+            </ul>
+            <!-- Contact Information -->
+            <div class="mb-3">
+                <h6 class="text-dark">Contáctanos / Contact us</h6>
+                <h6 class="">+2 292 4392 327</h6>
+            </div>
+
+            <!-- Social media -->
+            <div class="mb-3">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <a href="https://facebook.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Facebook">FB</a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://twitter.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Twitter">X</a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://instagram.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section (on the right) -->
+        <div class="hero-2 col-9 overlay" style="background-image: url('images/home.png'); height: 100vh;">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 text-center">
+                        <div class="play-vid">
+                            <a href="https://www.youtube.com/watch?v=Ipk1Hpt7gUw" class="play glightbox">
+                                <span class="icon-play"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Hero (only visible on mobile) -->
+<div class="hero-2 d-lg-none overlay" style="background-image: url('images/home.png'); height: 100vh;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <div class="play-vid">
+                    <a href="https://www.youtube.com/watch?v=Ipk1Hpt7gUw" class="play glightbox">
+                        <span class="icon-play"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 	  
 
 	  <div class="section">
@@ -156,7 +181,7 @@
     </div>
 
     <!-- Selectors (Below in mobile, right side in large screens) -->
-    <div class="col-12 col-lg-1 d-flex flex-row flex-lg-column justify-content-center align-items-start mt-3 mt-lg-0 d-none d-lg-block">
+    <div class=" col-lg-1 d-flex flex-row flex-lg-column justify-content-center align-items-start mt-3 mt-lg-0 d-none d-lg-block">
       <div class="selector-item mx-2 mx-lg-0 mb-lg-3" data-target="1">
         <h5 class="text-outlined">F1</h5>
       </div>
