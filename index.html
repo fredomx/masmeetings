@@ -38,16 +38,39 @@
             <span class="icofont-close js-menu-toggle"></span>
         </div>
     </div>
-    <div class="site-mobile-menu-body">
-        <ul class="site-menu list-unstyled">
-            <li><a href="index.html">XQ MM</a></li>
-            <li><a href="filosofia.html">Filosofía</a></li>
-            <li><a href="sueño.html">MM el Sueño</a></li>
-            <li><a href="conciencia-ambiental.html">Conciencia ambiental</a></li>
-            <li><a href="cultura.html">Cultura</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-        </ul>
-    </div>
+    <div class="site-mobile-menu-body d-flex flex-column vh-100 justify-content-between align-items-center text-center">
+
+		<!-- Logo at the top -->
+		<div class="mt-1 mb-5">
+			<a href="index.html" class="logo">
+				<img src="images/logo.svg" alt="Archiark Logo" class="logo-svg" style="max-width: 100%; height: 30px;">
+			</a>
+		</div>
+	
+		<!-- Menu in the middle -->
+		<ul class="site-menu list-unstyled flex-grow-1 d-flex flex-column justify-content-center">
+			<li><a href="index.html">XQ MM</a></li>
+			<li><a href="filosofia.html">Filosofía</a></li>
+			<li><a href="sueño.html">MM el Sueño</a></li>
+			<li><a href="conciencia-ambiental.html">Conciencia ambiental</a></li>
+			<li><a href="cultura.html">Cultura</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+		</ul>
+	
+		<!-- Contact Information & Social Media at the bottom -->
+		<div class="mb-3">
+			<h6 class="text-dark">Contáctanos / Contact us</h6>
+			<h6>+2 292 4392 327</h6>
+	
+			<div class="d-flex justify-content-center gap-2 mt-5">
+				<a href="https://facebook.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Facebook">FB</a>
+				<a href="https://twitter.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Twitter">X</a>
+				<a href="https://instagram.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Instagram">IG</a>
+			</div>
+		</div>
+	
+	</div>
+	
 </div>
 
 <!-- Mobile Navbar Toggle (Hamburger Icon) -->
@@ -113,9 +136,20 @@
 
 <!-- Mobile Hero (only visible on mobile) -->
 <div class="hero-2 d-lg-none overlay" style="background-image: url('images/home.png'); height: 100vh;">
+	
+	
+
+	
     <div class="container h-100">
+		
+		<!-- Logo at the top -->
+		<a href="index.html" class="logo">
+			<img src="images/logo.svg" alt="Archiark Logo" class="logo-svg p-3" style="max-width: 120px;">
+		</a>
+
         <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
+			
+            <div class="col-12 offset-1 text-center">
                 <div class="play-vid">
                     <a href="https://www.youtube.com/watch?v=Ipk1Hpt7gUw" class="play glightbox">
                         <span class="icon-play"></span>
@@ -383,7 +417,7 @@
 						  </div>
 					  
 						  <!-- Navigation Column -->
-						  <div class="col-lg-4">
+						  <div class="col-lg-4 d-none d-lg-block">
 							<ul class="carousel-navigation">
 							  <li class="carousel-nav-item active" data-index="0">01</li>
 							  <li class="carousel-nav-item" data-index="1">02</li>
@@ -531,17 +565,16 @@ Mas Mas Meetinas"
 			<!-- Logo y redes sociales -->
 			<div class="col-md-6 col-lg-3 mb-4 ">
 			  <div class="widget ">
-				<a href="index.html" class="logo mb-3 d-block ">
-				  <img src="images/logo-grey.svg" alt="Archiark Logo" class="logo-svg">
+				<a href="index.html" class="logo mb-5 d-block ">
+				  <img src="images/logo-grey.svg" alt="Archiark Logo" style="width: 100%; height: 50px;">
 				</a>
 			  </div>
 			  <div class="widget">
-				<ul class="social list-unstyled d-flex justify-content-center justify-content-lg-start gap-3">
+				<ul class="social list-unstyled d-flex justify-content-center justify-content-lg-center gap-3">
 				  <li><a href="#"><span class="icon-facebook"></span></a></li>
 				  <li><a href="#"><span class="icon-twitter"></span></a></li>
 				  <li><a href="#"><span class="icon-instagram"></span></a></li>
-				  <li><a href="#"><span class="icon-dribbble"></span></a></li>
-				  <li><a href="#"><span class="icon-linkedin"></span></a></li>
+
 				</ul>
 			  </div>
 			</div>
