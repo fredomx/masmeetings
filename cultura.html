@@ -31,129 +31,201 @@
 </head>
 <body>
 
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
+
+
+		<!-- Mobile Navbar (only visible on mobile) -->
+<div class="site-mobile-menu site-navbar-target d-lg-none">
+    <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+            <span class="icofont-close js-menu-toggle"></span>
+        </div>
+    </div>
+    <div class="site-mobile-menu-body d-flex flex-column vh-100 justify-content-between align-items-center text-center">
+
+		<!-- Logo at the top -->
+		<div class="mt-1 mb-5">
+			<a href="index.html" class="logo">
+				<img src="images/logo.svg" alt="Archiark Logo" class="logo-svg" style="max-width: 100%; height: 30px;">
+			</a>
+		</div>
+	
+		<!-- Menu in the middle -->
+		<ul class="site-menu list-unstyled flex-grow-1 d-flex flex-column justify-content-center">
+			<li><a href="index.html">XQ MM</a></li>
+			<li><a href="filosofia.html">Filosofía</a></li>
+			<li><a href="sueño.html">MM el Sueño</a></li>
+			<li><a href="conciencia-ambiental.html">Conciencia ambiental</a></li>
+			<li><a href="cultura.html">Cultura</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+		</ul>
+	
+		<!-- Contact Information & Social Media at the bottom -->
+		<div class="mb-3">
+			<h6 class="text-dark">Contáctanos / Contact us</h6>
+			<h6>+2 292 4392 327</h6>
+	
+			<div class="d-flex justify-content-center gap-2 mt-5">
+				<a href="https://facebook.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Facebook">FB</a>
+				<a href="https://twitter.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Twitter">X</a>
+				<a href="https://instagram.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Instagram">IG</a>
 			</div>
 		</div>
-		<div class="site-mobile-menu-body"></div>
+	
 	</div>
+	
+</div>
 
-	<div class="site-section" style="background-image: url('images/bg-lines.jpg'); background-size: cover; background-position: center;">
+<!-- Mobile Navbar Toggle (Hamburger Icon) -->
+<a href="#" class=" burger ml-auto float-end site-menu-toggle light js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target=".site-mobile-menu-body">
+    <span></span>
+</a>
 
-		<div class="row">
+<!-- Desktop Navbar (on the left) -->
+<div class="container-fluid d-none d-lg-block">
+    <div class="row">
+        <nav class="site-navi col-3 bg-white d-flex flex-column align-items-center">
+            <!-- Logo at the top -->
+            <a href="index.html" class="logo mb-4 mt-3 pt-5">
+                <img src="images/logo.svg" alt="Archiark Logo" class="logo-svg" style="max-width: 100%; height: auto;">
+            </a>
+            <!-- Navigation Menu -->
+            <ul class="site-menu list-unstyled flex-grow-1 d-flex flex-column justify-content-center">
+                <li class="active mb-3"><a href="index.html" class="text-dark">XQ MM</a></li>
+                <li class="mb-3"><a href="filosofia.html" class="text-dark">Filosofía</a></li>
+                <li class="mb-3"><a href="sueño.html" class="text-dark">MM el Sueño</a></li>
+                <li class="mb-3"><a href="conciencia-ambiental.html" class="text-dark">Conciencia ambiental</a></li>
+                <li class="mb-3"><a href="cultura.html" class="text-dark">Cultura</a></li>
+                <li class="mb-3"><a href="servicios.html" class="text-dark">Servicios</a></li>
+            </ul>
+            <!-- Contact Information -->
+            <div class="mb-3">
+                <h6 class="text-dark">Contáctanos / Contact us</h6>
+                <h6 class="">+2 292 4392 327</h6>
+            </div>
 
+            <!-- Social media -->
+            <div class="mb-3">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <a href="https://facebook.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Facebook">FB</a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://twitter.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Twitter">X</a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://instagram.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+		
 
-		  <!-- Navbar Section -->
-		  <nav class="site-navi col-3 bg-white d-flex flex-column align-items-center">
-			<!-- Logo at the top -->
-			<a href="index.html" class="logo mb-4 mt-3 pt-5">
-				<img src="images/logo.svg" alt="Archiark Logo" class="logo-svg">
-			  </a>
-			<!-- Navigation Menu -->
-			<ul class="site-menu list-unstyled flex-grow-1 d-flex flex-column justify-content-center">
-			  <li class="active mb-3"><a href="index.html" class="text-dark">XQ MM</a></li>
-			  <li class="mb-3"><a href="filosofia.html" class="text-dark">Filosofía</a></li>
-			  <li class="mb-3"><a href="sueño.html" class="text-dark">MM el Sueño</a></li>
-			  <li class="mb-3"><a href="conciencia-ambiental.html" class="text-dark">Conciencia ambiental</a></li>
-			  <li class="mb-3"><a href="cultura.html" class="text-dark">Cultura</a></li>
-			  <li class="mb-3"><a href="servicios.html" class="text-dark">Servicios</a></li>
-			</ul>
-			<!-- Contact Information -->
-			<div class="mb-3">
-				<h6 class="text-dark">Contáctanos / Contact us</h3>
-				<h6 class="">+2 292 4392 327</h3>
-			</div>
-
-			<!-- Social media -->
-			<div class="mb-3">
-				<div class="row justify-content-center align-items-center">
-				  <div class="col-auto">
-					<a href="https://facebook.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Facebook">
-					  FB
-					</a>
-				  </div>
-				  <div class="col-auto">
-					<a href="https://twitter.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Twitter">
-					  X
-					</a>
-				  </div>
-				  <div class="col-auto">
-					<a href="https://instagram.com" class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px;" aria-label="Instagram">
-					  IG
-					</a>
-				  </div>
-				</div>
-			  </div>
-		  </nav>
-
-
-	  
-
-			<!-- In between section -->
-			<div class="col-7" style="background-image: url(''); padding: 2rem 1rem; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-				<div class="container">
+         <!-- Hero Section -->
+		<div class="col-6 mt-5 pt-5 p-3" style="background-image: url('images/bg-lines.jpg'); background-size: cover; background-position: center;">
+			<div class="container">
 				<!-- Title Row -->
-				<div class="row mb-6 p-3">
-					<div class="col-6">
-					<h2 class="section-title-nocaps">Cultura</h2>
+				<div class="row mb-6 p-3 position-relative">
+					<!-- <div class="position-absolute top-0 start-0 w-100 h-100" 
+						 style="background-image: url('images/mapa_oax.svg'); background-size: cover; background-position: center;">
+					</div> -->
+					<h2 class="section-title-nocaps position-relative z-1">Cultura</h2>
+				</div>
+				
+				
+				<!-- Description Row -->
+				<div class="row p-3 align-items-center">
+					<div class="col-2 offset-1 p-3">
+						<img src="images/dot.png" alt="Icono ecológico" style="height: 15px;">
+					</div>
+					<div class="col-8 p-3">
+						<p>Deseamos mostrar a los visitantes los rasgos de nuestra cultura y poder despertar en ellos la conciencia que nos ayude a eliminar las barreras para entender que somos parte de un mismo país.</p>
 					</div>
 				</div>
-			
-				<!-- Description row -->
-				<div class="row mt-3 mb-6 p-3">
-					<!-- SVG Ico-->
-					<div class="col-1 offset-2 p-3" style="height: 20px;">
-						<img src="images/green.svg">
-					  </div>
-					<!-- Description -->
-					<div class="col-4 p-3">
-					<p>
-						Deseamos mostrar a los visitantes los rasgos de nuestra cultura y poder despertar en ellos la conciencia que nos ayude a eliminar las barreras para entender que somos parte de un mismo país.
+				
+				<!-- Last Info Row -->
+				<div class="row mt-3 p-3">
+					<div class="col-12">
+						<h2>Compartimos una misma casa:
+							<strong class="section-subtitle-min">EL PLANETA TIERRA.</strong></h2>
 					</div>
-				</div>
-
-
-				<!-- Last info row -->
-				<div class="row mt-3 mb-6 p-3">
-					<div class="col-10 mb-6 ">
-					<h2 class="section-subtitle">Compartimos una misma casa<br> EL PLANETA TIERRA.</h2>
-					</div>
-				</div>
-
-
 				</div>
 			</div>
-			<!-- In between Section ends -->
-
-
-
-
-			<!-- In between section -->
-			<div class="col-2">
-				<img src="images/cultura-3.png" class="h-50">
-			</div>
-			<!-- In between Section ends -->
-			
-
-
 		</div>
-	  </div>
+
+		<!-- Image Section -->
+		<div class="col-2 container-fluid">
+			<img src="images/cultura-3.png" alt="Herramientas" style="height: 70%;">
+			<img src="images/tierra.png" alt="Icono ecológico" class="mt-5">
+		</div>
+
+
+	</div>
+</div>
+
+<!-- Mobile Hero (only visible on mobile) -->
+<div class="hero-2 d-lg-none overlay" style="background-image: url('images/cultura-1.png'); height: 100vh;">
+	
+	
+
+	
+    <div class="container h-100">
+		
+		<!-- Logo at the top -->
+
+		<img src="images/logo.svg" alt="Archiark Logo" class="logo-svg p-4" style="width: 40%;">
+	
+
+        <div class="row h-100 align-items-center">
+			
+            <div class="col-12  text-center">
+				
+				
+				<h2 class="section-title text-white mb-5">Cultura</h2>
+				<!-- <div class="p-4 ">
+					<img src="images/mapa_oax.svg" alt="Icono ecológico" style="height: 100px; ">
+				</div>
+				 -->
+				
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+	<!-- Description Section Mobile Only -->
+	<div class="container col-12 section p-5 d-lg-none">
+		<div class="container">
+			<div class="row justify-content-center">
+				<p class="">Deseamos mostrar a los visitantes los rasgos de nuestra cultura y poder despertar en ellos la conciencia que nos ayude a eliminar las barreras para entender que somos parte de un mismo país.</p>
+				<!-- <div class="bg-secondary text-white p-4">
+			
+					<p class="fw-bold">Contáctanos,</p>
+					<p class="small-p">y te daremos Más que una propuesta...</p>
+					<a class="btn btn-secondary">Da click aqui</a>
+
+				</div> -->
+				
+			</div>
+		</div>
+	</div>
+	<!-- Description Section Mobile Only -->
 
 
 
 
 
 
-	  <div class="container pt-5 mt-3 mb-3">
+	  <div class="container p-5 mb-5">
 		<div class="row">
 
-			<div class="col-3 offset-1">
-				<img src="images/cultura-1.png" class="img-fluid h-100">
+			<div class="col-lg-3 offset-lg-1 p-3">
+				<img src="images/cultura-1.png" class="img-fluid w-100 h-100 object-fit-contain">
 			</div>
-			<div class="col-8">
-				<img src="images/cultura-2.png" class="img-fluid h-100">
+			<div class="col-lg-8 p-3">
+				<img src="images/cultura-2.png" class="img-fluid w-100 h-100 object-fit-contain">
 			</div>
 
 		</div>
