@@ -9929,6 +9929,13 @@ a {
     color: #3E98AD; /* Custom color */
   }
 
+  .section-subtitle-min {
+    font-size: 30px;
+    font-weight: 1000;
+    color: #3E98AD!important; /* Custom color */
+    
+  }
+
 
 
   .site-navi {
