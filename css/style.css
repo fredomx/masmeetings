@@ -9895,6 +9895,19 @@ a {
      
   }
 
+  @media (max-width: 768px) {
+    .section-title-light {
+      font-size: 40px; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-title-light {
+      font-size: 40px; /* Aún más pequeño en pantallas extra pequeñas */
+    }
+  }
+  
+
 
   .section-title-nocaps {
     font-size: 80px;
