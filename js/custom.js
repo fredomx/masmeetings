@@ -215,3 +215,39 @@ const slider = tns({
 	navItems[currentIndex].classList.add('active');
   });
   
+
+   // Clientes slider
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  tns({
+    container: '.clients-slider',
+    items: 4,
+    gutter: 24,
+    center: true,
+    loop: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    controls: false,
+    nav: false,
+    speed: 400,
+    responsive: {
+      0:   { items: 2, gutter: 12, center: false },
+      576: { items: 3, gutter: 16, center: true  },
+      992: { items: 4, gutter: 24, center: true  }
+    }
+  });
+});
+
+
+
+     // Modal Script
+
+
+
+  	document.querySelectorAll('.carousel-image').forEach(img => {
+	  img.addEventListener('click', function () {
+		document.getElementById('modalImage').src = this.src;
+	  });
+	});

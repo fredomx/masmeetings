@@ -10260,5 +10260,27 @@ a {
   /* Banner title */
 
 
+  .clients-slider .client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+.clients-slider img {
+  max-height: auto;
+  max-width: 120px;
+  opacity: 0.85;
+  filter: grayscale(100%);
+  transition: opacity 0.2s ease, filter 0.2s ease, transform 0.2s ease;
+}
+.clients-slider img:hover {
+  opacity: 1;
+  filter: none;
+  transform: scale(1.03);
+}
 
-
+@media (max-width: 575.98px) {
+  .clients-slider img {
+    max-height: 56px;
+  }
+}
