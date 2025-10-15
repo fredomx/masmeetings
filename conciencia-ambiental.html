@@ -213,43 +213,48 @@
 
 
 
+<div class="container-fluid consciencia-section pt-5 mt-3 mb-3">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="d-flex consciencia-carousel">
+        
+        <!-- Item 1 -->
+        <div class="consciencia-item mx-1 position-relative" data-id="1">
+          <img src="images/conciencia-1.png" alt="Reutilizamos materiales" class="img-fluid consciencia-img">
+          <div class="consciencia-caption">
+            <h5>Damos nueva vida a recursos de eventos pasados.</h5>
+          </div>
+        </div>
 
+        <!-- Item 2 -->
+        <div class="consciencia-item mx-1 position-relative" data-id="2">
+          <img src="images/conciencia-2.png" alt="Opciones con vegetales" class="img-fluid consciencia-img">
+          <div class="consciencia-caption">
+            <h5>Añadimos alimentos con vegetales, reduciendo el CO2 del planeta.</h5>
+          </div>
+        </div>
 
+        <!-- Item 3 -->
+        <div class="consciencia-item mx-1 position-relative" data-id="3">
+          <img src="images/conciencia-3.png" alt="Menús locales" class="img-fluid consciencia-img">
+          <div class="consciencia-caption">
+            <h5>Impulsamos menús con comida tradicional oaxaqueña.</h5>
+          </div>
+        </div>
 
-	  <div class="container-fluid pt-5 mt-3 mb-3">
-		<div class="row">
-		  <!-- Carousel (3 Grid) -->
-		  <div class="col-lg-12">
-			<div class="d-flex">
-			  <!-- Carousel Item 1 -->
-			  <div class="carousel-item d-flex flex-column align-items-center mx-1 position-relative expand-on-hover" data-id="1">
-				<img src="images/conciencia-1.png" alt="Image 1" class="img-fluid">
-			
-			  </div>
-			  <!-- Carousel Item 2 -->
-			  <div class="carousel-item d-flex flex-column align-items-center mx-1 position-relative expand-on-hover" data-id="2">
-				<img src="images/conciencia-2.png" alt="Image 2" class="img-fluid">
-				
-			  </div>
-			  <!-- Carousel Item 3 -->
-			  <div class="carousel-item d-flex flex-column align-items-center mx-1 position-relative expand-on-hover" data-id="3">
-				<img src="images/conciencia-3.png" alt="Image 3" class="img-fluid">
-				
-			  </div>
-			  <!-- Carousel Item 4 -->
-			  <div class="carousel-item d-flex flex-column align-items-center mx-1 position-relative expand-on-hover" data-id="4">
-				<img src="images/conciencia-4.png" alt="Image 3" class="img-fluid">
-				
-			  </div>
+        <!-- Item 4 -->
+        <div class="consciencia-item mx-1 position-relative" data-id="4">
+          <img src="images/conciencia-4.png" alt="Recipientes reutilizables" class="img-fluid consciencia-img">
+          <div class="consciencia-caption">
+            <h5>Evitamos plásticos de un solo uso con envases sostenibles.</h5>
+          </div>
+        </div>
 
-			  
+      </div>
+    </div>
+  </div>
+</div>
 
-			</div>
-		  </div>
-	  
-
-		</div>
-	  </div>
 
 	  
 
@@ -350,6 +355,31 @@
 	<script src="js/navbar.js"></script>
 	<script src="js/counter.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".consciencia-item");
+
+    items.forEach(item => {
+      // Al pasar el mouse
+      item.addEventListener("mouseenter", () => {
+        item.classList.add("active");
+      });
+
+      // Al quitar el mouse
+      item.addEventListener("mouseleave", () => {
+        item.classList.remove("active");
+      });
+
+      // Soporte para pantallas táctiles (toggle)
+      item.addEventListener("touchstart", () => {
+        items.forEach(i => i.classList.remove("active"));
+        item.classList.add("active");
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
 

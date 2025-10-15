@@ -10292,3 +10292,67 @@ a {
   display: inline-block; /* para que el cuadro se ajuste al texto */
 }
 
+
+
+
+/* ====== SECCIÓN CONSCIENCIA ====== */
+.consciencia-section {
+  overflow: hidden;
+}
+
+.consciencia-carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.consciencia-item {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.consciencia-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+/* Texto encima de la imagen */
+.consciencia-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.3s ease;
+}
+
+.consciencia-caption h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+/* Clase activa desde JS */
+.consciencia-item.active {
+  transform: scale(1.05);
+  z-index: 5;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.consciencia-item.active .consciencia-caption {
+  background: rgba(0, 0, 0, 0.6);
+}
